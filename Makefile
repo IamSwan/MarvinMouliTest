@@ -7,14 +7,14 @@
 
 TARGET = test.out
 
-SRC = 	./src/main.c
+SRC = 	./main.c
 
 OBJ = $(SRC:.c=.o)
 
 all: $(TARGET)
 
 $(TARGET): $(OBJ)
-	$(CC) -o $(TARGET) $(OBJ) -lcriterion
+	$(CC) -o $(TARGET) $(OBJ)
 
 clean:
 	$(RM) $(OBJ)
